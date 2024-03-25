@@ -1,0 +1,155 @@
+/* styles.css */
+  
+  .form-container {
+    max-width: 95%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .formtitle {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .formtitle p {
+    text-transform: none;
+    margin: 15px;
+  }
+  /*form dropdown*/
+  h2.dropdownhelp {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+  }
+#dropdown {
+  background-color:#fcf071;
+  border-radius: 8px;
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 1em;
+  margin-left: 10%;
+  text-align: center;
+}
+/*end*/
+
+  .form-page {
+    display: none;
+    }
+  
+  #page1 {
+    display:block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Style for input labels */
+  label {
+    display:inline-flex;
+    margin-bottom: 5px;
+    position: relative;
+
+  }
+  
+  /* Style for text input fields */
+  .row_contact_header {
+    text-align: center;
+  }
+  
+  input[type="text"]
+  {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    border-radius: 20px;
+    border: .1em solid rgb(201, 195, 195); 
+   }
+
+  #lead_phone_number {
+    width: 40px;
+    position:relative;
+    display:flex;
+  } 
+
+  #dp_lead_event_date {
+  width: 100%;
+  text-align: center;
+}
+
+#lead_contact_preference {
+  width: 150px;
+  margin-left: 3px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.row_details_header {
+  text-align: center;
+}
+  
+input[type="radio"] {
+    margin-top: 5px;
+    padding-right: 5px;
+    display: flex;
+  }
+
+  #lead_start_time {
+    text-align: center;
+    width: 150px;
+}
+  #lead_end_time {
+    text-align: center;
+    width: 150px;
+}
+
+#lead_guest_count {
+  margin-left: 3px;
+}
+
+label[for=lead_additional_information]{
+  display: none;
+  color: transparent;
+  position: absolute;
+}
+
+.lead_additional_information {
+  border-radius: 8px;
+  margin-left: 3px;
+  padding: 10px;
+  display: none;
+}
+
+#lead_referral_source_id {
+  width: 150px;
+  margin-left: 3px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+#lead_submit {
+  background-color:#fcf071;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  margin-left: 30%;
+}
+#lead_submit:hover {
+letter-spacing: 2px;
+background-color: white;
+transition: .5s ease-in-out;
+}
+
+#lead_form_submit a {
+display: none;
+}

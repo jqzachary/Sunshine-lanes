@@ -1,0 +1,108 @@
+.honor_container {
+    background-color: rgb(1, 1, 1);
+    height: 210px;
+    width: 100%;
+    margin-top: -100px;
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.honor_bg {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    object-fit: cover;
+    object-position: center right -20em;
+}
+
+.overlay__res {
+    background: rgb(107, 107, 139);
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+
+.text__about h1{
+    color: rgb(246, 240, 240);
+    position: absolute;
+    margin: .6em 0 0 1.8em;
+    z-index: 9;
+    font-size: 2em;
+}
+
+.text__about h2.about {
+    position: absolute;
+    background: #e5ba0e;
+    height: 1em;
+    width: 7em;
+    margin: 1.1em 0 0 2.5em;
+    z-index: 8;
+}
+
+
+
+.abouttxt h1 {
+    z-index: 10;
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+}
+.abouttxt p {
+    color: rgb(89, 89, 89);
+    font-size: .9em;
+    padding: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.ltagcontent{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    z-index: 20;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+.ltag1 {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;  
+    padding-left: 15px;
+    padding-right: 20px;
+    position: absolute;
+    border-radius: 70px;
+}
+
+
+.ltagtxt2 {
+    width: 100%; 
+    position:  relative;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.ltagtxt2 h1 {
+
+}
+.ltagtxt2 p {
+   color: rgb(89, 89, 89);
+   font-size: .9em;
+}
+
+/*finish breakdowns*/
+@media screen and (min-width: 700px) {
+    .ltagcontent{
+        height: 500px;
+    }
+}
