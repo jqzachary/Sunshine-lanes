@@ -1,0 +1,245 @@
+.specials_container {
+    background-color: rgb(1, 1, 1);
+    height: 200px;
+    width: 100%;
+    margin-top: -100px;
+    position:absolute;
+    margin-bottom: 50px;
+}
+
+.specials_bg {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    object-position: center right -20em;
+}
+
+.overlay__special{
+    background: rgb(87, 74, 49);
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+
+.text__special {
+    position: relative;
+    padding-top: 125px;
+    margin-left: 35px;
+    height: 100%;
+}
+.text__special h1{
+    color: rgb(246, 240, 240);
+    z-index: 9;
+    font-size: 2em;
+    position: absolute;
+}
+
+.text__special h2.event {
+    background: #e5ba0e;
+    height: 1em;
+    width: 8em;
+    z-index: 8;
+    padding-top: 30px;
+}
+
+.special_txt {
+    text-align: center;
+    width: 100%;
+    position:relative;
+    padding-top: 7em;
+
+}
+
+.special_txt img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.special_txt h1 {
+    font-size: 1.7em;
+}
+.special_txt p {
+    color: rgb(89, 89, 89);
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.special_containers {
+}
+
+.daily__specials{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    z-index: 20;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+
+.daily__specials h3 {
+    background-color: #e5ba0e;
+    color: white;
+    display: block;
+    position: absolute;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 10px;
+    margin-left: 49px;
+    border-radius: 45px;
+    letter-spacing: 3px;
+    z-index: 9;
+}
+
+.special_img {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;  
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 70px;
+    padding-top: 20px;
+}
+.special_vid {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;  
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 70px;
+    padding-top: 20px;
+    display: absolute;
+}
+
+
+.special__descrip {
+    width: 80%; 
+    display: none;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.195); /* Adjust the transparency as needed */
+    -webkit-backdrop-filter: blur(10px); /* Add this line first, it fixes blur for Safari*/
+    backdrop-filter: blur(20px); /* Adjust the blur amount as needed */
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    color: white;
+}
+
+.special__descrip h1 {
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+
+}
+.special__descrip p {
+   color: rgb(247, 240, 240);
+   font-weight: bold;
+   font-size: .8em;
+}
+
+.special__descrip a{
+    text-align: left;
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: .9em;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.special__descrip a:hover {
+    color: black;
+    background-color: white;
+    transition: .5s ease;
+}
+
+/*finish breakdowns*/
+@media screen and (min-width: 600px) {
+    .specials_container {
+        height: 350px;
+    }
+    
+    .events_container {
+        height: 600px;
+    }
+
+    .text__special {
+        padding-top: 200px;
+    }
+
+    .text__special h1 {
+        font-size: 3em;
+    }
+
+    .text__special h2.event {
+        height: 2em;
+        width: 11em;
+    }
+    
+    .daily__specials {
+        height: 600px;
+    }
+
+    .special_txt {
+        margin-top: 150px;
+    }
+
+    .special_txt img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .special_txt h1 {
+        font-size: 2em;
+    }
+
+    .special_txt p {
+        font-size: 1.5em;
+    }
+
+    .daily__specials h3 {
+        font-size: 2em;
+    }
+
+    .special__descrip {
+        padding: 100px;
+    }
+
+    .special__descrip h1 {
+        font-size: 2em;
+    }
+
+    .special__descrip p {
+        font-size: 1.5em;
+    }
+
+    .special__descrip a {
+        margin-top: 20px;
+        padding: 12px;
+        border-radius: 25px;
+        font-size: 1.3em;
+    }
+  }

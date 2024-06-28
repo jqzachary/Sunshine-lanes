@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#272727">
+  <title>Document</title>
+  <link rel="stylesheet" href="/Sunshine-lanes/styles.css">
+  <link rel="stylesheet" href="../form code/form.css">
+  <link rel="stylesheet" href="../css folders/styles-reserve.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+        <ul>
+        <li class="navbar__logo"><a href="../index.html"></a></li>
+        </ul>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> 
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="menu">menu</span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__btn">
+          <a href="../pages/reserve_tripleseat.html" class="menu_btn" id="reservations">Reserve a Lane</a></li>
+        <li class="navbar__item">
+          <a href="../pages/lasertag.html" class="navbar__links" id="laser-tag">Laser Tag</a></li>
+        <li class="navbar__item">
+          <a href="../pages/reserve_tripleseat.html" class="navbar__links" id="parties-events">Parties & Events</a></li>
+          <li class="navbar__item">
+            <a href="../pages/kidsbowlfree.html" class="navbar__links" id="kids-bowl-free">Kids Bowl Free</a></li>
+        <li class="navbar__item">
+          <a href="../pages/specials.html" class="navbar__links" id="specials">Specials</a></li>
+        <li class="navbar__item">
+            <a href="../pages/eat-and-drink.html" class="navbar__links" id="eat-and-drink">Eat & Drink</a></li>
+        <li class="navbar__item">
+          <a href="../pages/tournaments_and_leagues.html" class="navbar__links" id="tournaments">Leagues & Tournaments</a></li>
+        <li class="navbar__item">
+              <a href="../pages/about.html" class="navbar__links" id="About">About</a></li>
+        <li class="navbar__item">
+              <a href="#jobs" class="navbar__links" id="jobs">Jobs</a></li>
+  
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <section class="hero__reserve">
+      <div class="reserve_container">
+        <img src="../media/holdingbowlingballs.jpeg" alt="" class="reservebg">
+        <a href="" class="overlay__res"></a>
+      </div>   
+      <div class="text__res"> 
+      <h1>Reserve with us</h1>
+      <h2 class="reserve"></h2>
+    </div>
+  </header>
+  
+  <div class="formtitle">
+    <h1>Events Form</h1>
+    <p>When you book a party at Sunshine Bowling, 
+      we include complimentary use of bowling balls and bowling shoes! 
+      When you’re ready to get started, fill out the 
+      form below and our event planners will contact you 
+      to finalize the details. If you have immediate questions 
+      or prefer to book over the phone, call us at <strong>727-392-2271.</strong> 
+      We’ll see you soon!</p>
+   <h4></h4>
+    </div>
+</section>
+<!--form section lengthy-->
+<!-- Dropdown to select the reservation type -->
+<h2 class="dropdownhelp">Looking for a Different Form?</h2>
+<select id="dropdown" onchange="populateRelatedContent()">
+<option value="" disabled selected>Select an option</option>
+<option value="option1">Lane Reservations</option>
+<option value="option2">Birthday Parties</option>
+<option value="option3">Parties & Events</option>
+<option value="option4">School or Kids Camp</option>
+<option value="option5">Full Facility Buyout</option>
+<!-- Add more options as needed -->
+</select>
+  </div>
+
+  <div class="form-container">
+    <script src="https://api.tripleseat.com/v1/leads/ts_script.js?lead_form_id=10699&public_key=d1e6f5fc8540727584c877d9faaf88c06c74cad6"></script><a id="tripleseat_link" href="https://www.tripleseat.com">Private Event Software powered by Tripleseat</a>
+  </div>
+  
+  <footer>
+    <ul class="footermenu">
+  <li class="fmenulinks"><a href="/Sunshine-lanes/index.html">Home</a>
+  </li>
+  <li class="fmenulinks"><a href="../pages/reserve_tripleseat.html">Parties & Events</a>
+  </li>
+  <li class="fmenulinks"><a href="../pages/specials.html">Specials</a>
+  </li>
+  <li class="fmenulinks"><a href="#about">About</a>
+  </li>
+  <li class="fmenulinks"><a href="#jobs">Jobs</a>
+  </li>
+  </ul>
+  <ul class="footersocial">
+  
+    <li><a href=""><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+    <li><a href=""><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+  </ul>
+    <div class="locations">
+    <h2>Seminole Lanes</h2>
+    <a href="#location">8668 Park Blvd, Seminole, FL 33777 </a>
+    <p>727-392-2271</p>
+    <h2>Sunrise Lanes</h2>
+    <a href="#location">6393 9th St N, St. Petersburg, FL 33702</a>
+    <p>727-522-2174</p>
+  </div>
+  <div class="policies">
+  <p>Sunshine Lanes ©2024 |</p>
+  <a href="#">Privacy Policy</a>
+  </div>
+  
+  </footer>
+
+</body>
+
+<script src="../app.js"></script>
+<script src="../form code/form.js"></script>
+
+<script> // Function to update the textarea
+function updateAdditionalInfo(value) {
+  document.getElementById('lead_additional_information').value = "Selected Language: " + value;
+}
+
+// Attach event listeners to radio buttons
+document.querySelectorAll('input[name="fav_language"]').forEach((radio) => {
+  radio.addEventListener('change', function() {
+    updateAdditionalInfo(this.value);
+  });
+});
+</script>
+</html>

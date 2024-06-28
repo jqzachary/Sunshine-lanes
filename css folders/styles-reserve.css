@@ -1,0 +1,129 @@
+
+.reserve_container {
+    background-color: rgb(1, 1, 1);
+    height: 210px;
+    width: 100%;
+    margin-top: -100px;
+    position: absolute;
+}
+
+.reservebg {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    object-fit: cover;
+    object-position: center right -20em;
+}
+
+.overlay__res {
+    background: rgb(42, 42, 105);
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+
+.text__res h1{
+    color: rgb(246, 240, 240);
+    position: absolute;
+    margin: .6em 0 0 1.8em;
+    z-index: 9;
+    font-size: 2em;
+}
+
+.text__res h2.reserve {
+    position: absolute;
+    background: #e5ba0e;
+    height: 1em;
+    width: 12em;
+    margin: 1em 0 0 2.6em;
+    z-index: 8;
+}
+
+.text__res h2.laser {
+    position: absolute;
+    background: #e5ba0e;
+    height: 1em;
+    width: 7em;
+    margin: 1.1em 0 0 2.9em;
+    z-index: 8;
+}
+
+.res__desc {
+    text-align: center;
+    position: relative;
+    margin-top: 135px;
+    margin-bottom: 35px;
+    z-index: 12;
+}
+
+.res__desc h3 {
+    font-size: 2em;
+}
+
+.res__desc p {
+ font-size: 1em;
+ color: rgb(95, 93, 93);
+}
+
+.res__desc h4 {
+    color: rgb(227, 223, 223);
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    border-bottom: solid;
+}
+
+.form__logocontainer {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.form img {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.formheadtxt {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.formheadtxt h4 {
+    font-size: 2em;
+}
+
+.form__container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.socialf{
+    width: 100%;
+    height:1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialf li {
+    list-style: none;
+}
+
+.socialf li b {
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
+  }
